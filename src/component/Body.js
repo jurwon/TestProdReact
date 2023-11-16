@@ -1,11 +1,10 @@
 import React, { useState, useContext } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Button, Space, DatePicker, version } from "antd";
 
 import styled from "styled-components";
 
 //전역 속성 가져오기
-import ColorContext, { ColorConsumer } from "../ch14_ContextAPITest/testColor";
+import ColorContext from "../ch14_ContextAPITest/testColor";
 
 import "../CSS/test.css";
 

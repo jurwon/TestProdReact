@@ -1,15 +1,10 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import axios from "axios";
-import { Button } from "antd";
 
 import NewsItem from "../model/NewsItem";
 import PublicItem from "../model/PublicItem";
 import PublicItem2 from "../model/PublicItem2";
-
-//뉴스 아이템 요소 출력을 감싸는 목록 부분
-//미디어쿼리 넣어서 반응형으로, 특정 크기를 기준으로 웹 브라우저 창의 크기 변경시
-//화면 사이즈 적용
 
 const NewsListCss = styled.div`
   box-sizing: border-box;
@@ -24,19 +19,7 @@ const NewsListCss = styled.div`
   }
 `;
 
-//더미 데이터
-const sampleArticle = {
-  title: "제목",
-  description: "내용",
-  url: "https://www.naver.com",
-  urlToImage: "https://via.placeholder.com/160",
-};
-
 const NewsList = ({ category }) => {
-  //useEffect 이용해서 마운트시 최초 1회 데이터 받아오기
-  //create, update, delete없어서
-  //Rest Api 서버에서 데이터를 다 받으면 articles에 넣기
-
   const [articles, setArticles] = useState(null);
   //data 받는중이면 true, 다 받았으면 false
   const [loading, setLoading] = useState(null);
@@ -52,24 +35,6 @@ const NewsList = ({ category }) => {
         const query = category === "all" ? "" : `&category=${category}`;
 
         console.log(query);
-
-        // const response = await axios.get(
-        //   `https://newsapi.org/v2/top-headlines?country=kr&${query}&apiKey=010327a111f64954acf4bcd1a9ddc06a`
-        // );
-
-        // //부산 테마먹거리
-        // const query2 = category === "busanFood" ? `FoodService/getFoodKr` : "";
-        // const response2 = await axios.get(
-        //   `https://apis.data.go.kr/6260000/FoodService/getFoodKr?serviceKey=ALRX9GpugtvHxcIO%2FiPg1vXIQKi0E6Kk1ns4imt8BLTgdvSlH%2FAKv%2BA1GcGUQgzuzqM3Uv1ZGgpG5erOTDcYRQ%3D%3D&numOfRows=100&pageNo=1&resultType=json`
-        // );
-
-        // //도보여행
-        // const query3 =
-        //   category === "busanWalking" ? `WalkingService/getWalkingKr` : "";
-        // const response3 = await axios.get(
-
-        //   `https://apis.data.go.kr/6260000/WalkingService/getWalkingKr?serviceKey=ALRX9GpugtvHxcIO%2FiPg1vXIQKi0E6Kk1ns4imt8BLTgdvSlH%2FAKv%2BA1GcGUQgzuzqM3Uv1ZGgpG5erOTDcYRQ%3D%3D&pageNo=1&numOfRows=100&resultType=json`
-        // );
 
         switch (query) {
           case "":
@@ -212,19 +177,7 @@ const NewsList = ({ category }) => {
     }
   };
 
-  return (
-    <NewsListCss>
-      {choosePage({ articles })}
-      {/* {articles.map((article) => (
-        <NewsItem key={article.url} article={article} />
-      ))} */}
-      {/* <NewsItem article={sampleArticle} />
-      <NewsItem article={sampleArticle} />
-      <NewsItem article={sampleArticle} />
-      <NewsItem article={sampleArticle} />
-      <NewsItem article={sampleArticle} /> */}
-    </NewsListCss>
-  );
+  return <NewsListCss>{choosePage({ articles })}</NewsListCss>;
 };
 
 export default NewsList;

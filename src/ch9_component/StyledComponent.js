@@ -1,6 +1,5 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { Button } from "antd";
 import { AiFillApple } from "react-icons/ai";
 
 const StyledComponent = () => {

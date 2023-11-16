@@ -2,18 +2,9 @@ import React, { useCallback, useRef, useState } from "react";
 import { Button } from "antd";
 import { produce } from "immer";
 
-// 배열 내장함수(concat,map,filter, splice, 등) -> 기존배열을 유지하면서, 새롭게 생성
-// spread 연산자를 이용해서, 기존 내용의 사본을 만들어서 작업함.
-// 문제 발생 ) 배열의 깊이가 깊어짐
-//spread 연산자. ...array ) 사용하면 구현은 가능하지만 작업이 어려움, 복잡도 올라감
-
-//immer 사용해서 해결
-//준비물 : yarn add immer
-//이름, 나이, 입력란에서 추가, 삭제 예제 이용
-
 const ImmerTest = () => {
   //순서2 , useRef, 설정1
-  const inputElement = useRef(null);
+  //const inputElement = useRef(null);
 
   // id , 임의로 useRef로 만들어 사용하기.
   const nextId = useRef(1);

@@ -2,15 +2,6 @@ import React, { useCallback, useState } from "react";
 import { HiPencil } from "react-icons/hi";
 import styled from "styled-components";
 
-const TodoEditor = styled.div`
-  max-width: 600px;
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding: 20px;
-  border: 1px solid gray;
-`;
-
 const InsertTodo = styled.input`
   flex: 1;
   box-sizing: border-box;

@@ -1,7 +1,6 @@
 import React, { useCallback, useState } from "react";
 import NewsList from "./NewsList";
 import Categories from "./Categories";
-import styled from "styled-components";
 
 const MainNews = () => {
   const [category, setCategory] = useState("all");

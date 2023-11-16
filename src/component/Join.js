@@ -4,7 +4,7 @@ import { useState, useRef } from "react";
 
 const Join = () => {
   const [Image, setImage] = useState(require("../image/login.gif"));
-  const [File, setFile] = useState("");
+  const [setFile] = useState("");
 
   //input태그 접근 위한 ref속성
   const fileInput = useRef(null);

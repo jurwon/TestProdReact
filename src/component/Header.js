@@ -4,7 +4,7 @@ import styled from "styled-components";
 //yarn add react-router-dom으로 도구 설치
 
 //전역 속성 가져오기
-import ColorContext, { ColorConsumer } from "../ch14_ContextAPITest/testColor";
+import ColorContext from "../ch14_ContextAPITest/testColor";
 
 const HeaderContainer = styled.header`
   /* background-color: #557c55; */

@@ -12,13 +12,6 @@ const MainTitleTextCss = styled.p`
   color: #fa7070;
 `;
 
-const MainTextCss = styled.p`
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  color: orange;
-`;
-
 const Wrapper = styled.div`
   padding: 20px;
   width: calc(100%-40px);

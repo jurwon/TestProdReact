@@ -12,7 +12,6 @@ import { useNavigate } from "react-router-dom";
 const RefPracticeScrollTest = () => {
   //box영역을 선택하기 위한 ref 설정1
   const box = useRef(null);
-  const navigate = useNavigate();
 
   const StyleBox = styled.div`
     border: 1px solid black;

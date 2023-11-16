@@ -1,8 +1,3 @@
-//함수형 컴포넌트
-//state구현 방법이 조금 다름
-//useState란 hooks를 미리 사용함
-// 비구조화 할당 문법.
-//const [one, two ] = array;
 import { Button } from "antd";
 import React, { useState } from "react";
 // useState(0) : 초깃값 (number = 0)
@@ -10,7 +5,6 @@ import React, { useState } from "react";
 
 const MyCount = () => {
   const [number, setNumber] = useState(0);
-  const [anotherNumber, setAnotherNumber] = useState(100);
 
   const onClickUp = () => {
     setNumber(number + 1);

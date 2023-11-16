@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 //파일 분리한 기능 불러오기(reducer)
 import useInfoInputFunc from "./InfoInputFunc";
 
