@@ -1,0 +1,26 @@
+/* 자동으로 클래스명이 유니크(중복 불가)
+원하는 클래스이름 사용 */
+
+.wrapper {
+  background: #f875aa;
+  padding: 1rem;
+  color: #557c55;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.wrapper:hover {
+  font-size: 3rem;
+}
+
+.wrapper2 {
+  background: #aedefc;
+  color: black;
+}
+
+/* 전역 */
+:global .testGlobal {
+  font-weight: 800;
+  color: #557c55;
+  font-size: 3rem;
+}

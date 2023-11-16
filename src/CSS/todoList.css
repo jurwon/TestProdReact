@@ -1,0 +1,71 @@
+/* #F875AA : 핫핑크
+#FFDFDF : 연한 자두색
+#FFF6F6 : 좀더 연한 자두색
+#AEDEFC : 하늘색 */
+
+/* #F2FFE9 : 연두색
+#A6CF98 : 좀더 진한 연두색
+#557C55 : 말차색
+#FA7070 : 자몽색 */
+
+.header h1 {
+  margin-bottom: 0px;
+  color: #fa7070;
+}
+.container {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid gray;
+}
+.TodoEditor .editor_wrapper {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.TodoEditor input {
+  flex: 1;
+  box-sizing: border-box;
+  border: 1px solid #557c55;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.TodoEditor input:focus {
+  outline: none;
+  border: 1px solid #f875aa;
+}
+
+.TodoEditor button {
+  cursor: pointer;
+  width: 80px;
+  border: none;
+  background-color: #a6cf98;
+  color: #557c55;
+  border-radius: 5px;
+}
+
+.TodoList .searchbar {
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #557c55;
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.TodoList .searchbar:focus {
+  outline: none;
+  border-bottom: 1px solid #fa7070;
+}
+
+.TodoList .list_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 10px;
+}

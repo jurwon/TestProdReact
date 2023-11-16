@@ -1,0 +1,37 @@
+/* #F875AA : 핫핑크
+#FFDFDF : 연한 자두색
+#FFF6F6 : 좀더 연한 자두색
+#AEDEFC : 하늘색 */
+
+/* #F2FFE9 : 연두색
+#A6CF98 : 좀더 진한 연두색
+#557C55 : 말차색
+#FA7070 : 자몽색 */
+.funcComp {
+  background-color: blueviolet;
+  color: aquamarine;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+footer {
+}
+.count {
+  text-align: center;
+}
+.count2 {
+  display: inline-block;
+  font-family: arial;
+  font-size: 24px;
+  margin: 25px;
+  width: 350px;
+  height: 300px;
+  outline: dashed 1px black;
+}
+ul {
+  list-style-type: none;
+}
+input:focus {
+  outline: none;
+  border: 1px solid #f875aa;
+}
