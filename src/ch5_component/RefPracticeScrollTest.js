@@ -2,12 +2,6 @@ import React from "react";
 import { useRef } from "react";
 import styled from "styled-components";
 import { Button } from "antd";
-import { useNavigate } from "react-router-dom";
-//ref속성으로 확인 많이 하는 종목 : 스크롤, input focjs
-//div 태그로 css 특정 영역 만들어서
-//1) 그라데이션 박스 크기 이용해서 스크롤 붙이기
-//2) 스크롤에 ref속성 달아서 맨 아래로 가기
-//3)
 
 const RefPracticeScrollTest = () => {
   //box영역을 선택하기 위한 ref 설정1

@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import { useReducer } from "react";
 
 //리듀서함수(새로운 상태 만듦) 만들기
 //const [state, dispatch] = useReducer(reducer, initialState);
